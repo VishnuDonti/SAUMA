@@ -1,6 +1,6 @@
 # sems
 
->  sems is a even managemen projec
+>  sems is an event management project
 
 ## Build Setup
 
