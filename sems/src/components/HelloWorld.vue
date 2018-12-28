@@ -1,22 +1,26 @@
 <template>
+
   <mdb-carousel :interval="8000" showControls showIndicators>
-    <mdb-carousel-item video src="https://mdbootstrap.com/img/video/Tropical.mp4" alt="First slide" auto loop>
+    <mdb-carousel-item img src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" mask="black-light" alt="First slide">   
     </mdb-carousel-item>
-    <mdb-carousel-item video src="https://mdbootstrap.com/img/video/forest.mp4" alt="Second slide" auto loop>
+    <mdb-carousel-item img src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" mask="black-strong" alt="Second slide">
+       <mdb-carousel-caption title="Light mask" text="First text"></mdb-carousel-caption>
     </mdb-carousel-item>
-    <mdb-carousel-item video src="https://mdbootstrap.com/img/video/Agua-natural.mp4" alt="Third slide" auto loop>
+    <mdb-carousel-item img src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" mask="black-slight" alt="Third slide">
     </mdb-carousel-item>
   </mdb-carousel>
 </template>
 
 <script>
-import { mdbCarousel, mdbCarouselItem } from 'mdbvue';
+import { mdbCarousel, mdbCarouselItem, mdbCarouselCaption ,  mdbBtn} from 'mdbvue';
 
 export default {
-  name: 'VideoCarouselPage',
+  name: 'CarouselPage',
   components: {
     mdbCarousel,
-    mdbCarouselItem
+    mdbCarouselItem,
+    mdbCarouselCaption,
+     mdbBtn
   }
 };
 </script>
